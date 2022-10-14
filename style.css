@@ -1,0 +1,54 @@
+/* name colors backgrounds with variables, so the light class is added
+in jQuery they chnage with it. NOTE: You can choose any colors you want*/
+
+:root {
+    --bg-black-deep: rgb(18, 17, 17);
+    --bg-black-mid: rgb(45, 45, 45);
+    --bg-black-low: rgb(73, 73, 73);
+    --text-white-light: white;
+    --text-white-mid: lightblue;
+    --text-white-low: aliceblue;
+}
+
+.light {
+    --bg-black-deep: white;
+    --bg-black-mid: lightblue;
+    --bg-black-low: aliceblue;
+    --text-white-light: rgb(18, 17, 17);
+    --text-white-mid: rgb(45, 45, 45);
+    --text-white-low: rgb(73, 73, 73);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: var(--bg-black-low);
+    color: var(--text-white-low);
+}
+
+h1 {
+    margin: 0;
+    width: fit-content;
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.fa {
+    color: var(--text-white-mid);
+}
+
+.dark-mode {
+    position: absolute;
+    right: 0;
+    padding: 5px 15px;
+}
+
+.dark-mode i {
+    cursor: pointer;
+    color: var(--text-white-light);
+}
